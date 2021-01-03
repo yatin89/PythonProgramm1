@@ -1,0 +1,42 @@
+trans = "9,232,434,343,213"
+sepr = trans[1::4]
+all_sep = ""
+for i in sepr: #loop  result in  one line.
+    if not i.isnumeric():
+        all_sep = all_sep+i
+print(all_sep)
+
+
+print("*" * 30)
+print(sepr)
+print("*" * 30)
+parrot="abcdefghijklmnopqrstuvwxyz"
+print(parrot)
+print(parrot[3])
+
+print(parrot[-1])
+for i in range(1,10):
+    print(parrot[-1-i])
+
+print(parrot[0:6])
+print(parrot[-6:])
+print(parrot[-1:])
+print(parrot[:])    #complete sequence
+
+#step in Slices
+print(parrot[0:26:2])   #acegikmoqsuwy
+print(parrot[1:26:2])   #bdfhjlnprtvxz
+print(parrot[0::2])   #acegikmoqsuwy
+print(parrot[1::2])   #bdfhjlnprtvxz
+print(parrot[-25:-1:5]) #bglqv
+
+#slice back
+
+letters = "abcdefghijklmnopqrstuvwxyz"
+backward1 = parrot[-1::-1]  #zyxwvutsrqponmlkjihgfedcba
+backward25 = parrot[26::-1] #zyxwvutsrqponmlkjihgfedcba
+print(letters[-1:-8:-1])
+print(letters[-7::1])
+
+print(backward1)
+print(backward25)
